@@ -1,0 +1,94 @@
+.page {
+    margin: 0 auto;
+    max-width: 1120px;
+    background-color:$bgHeaderColor;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $backgroundWhite;
+	padding: 15px 16px 15px 16px;
+	border-bottom: 1px solid $borderColor;
+	&__header-left, &__header-right {
+		display: flex;
+		align-items: center;
+	}
+    &__header-left {
+        .divider {
+            display: none;
+        }
+    }
+}
+.logo {
+	transition: 0.1s all;
+	&:hover {
+		filter: drop-shadow(0 2px 1px  #0e0d0d);
+	}
+}
+.divider{
+    margin-right: 20px;
+    border: 1px solid #EAEAEA;
+    height: 32px;
+    border-radius: 1px;
+}
+
+.button {
+    &__profile, &__chat, &__call, &__button-label {
+        display: none;
+    }
+    &__burger {
+        margin-right: 16px;
+    }
+    &__repair {
+        margin-right: 16px;
+    }
+} 
+
+
+
+@media (min-width:768px) {
+    
+    .header {
+        padding: 15px 24px 15px 24px;
+        &__left {
+            display:block;
+            margin:0 16px;
+        }
+        &__header-left {
+            .divider {
+                display: block;
+            }
+        }
+        &__header-right{
+            .divider {
+                margin-left: 20px;
+            }
+        }
+
+    }
+    .button {
+        &__burger {
+            margin-right: 20px;
+        }
+        &__profile{
+            display: block;
+        }
+        &__chat {
+            display: block;
+            margin-right: 16px;
+        }
+        &__call {
+            display: block;
+            margin-right: 16px;
+        }
+    }
+    .divider {
+        margin-left: 0;
+    }
+}
+@media (min-width:1440px) {
+    .header {
+        display: none;
+    }
+}

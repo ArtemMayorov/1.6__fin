@@ -1,0 +1,9 @@
+.agreement {
+    font-size: 14px;
+    line-height: 16px;
+    color: $activeTextColor;
+    &__link {
+        color: $sendColor;
+        text-decoration: none;
+    }
+}

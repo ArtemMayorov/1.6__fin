@@ -1,0 +1,174 @@
+.about-company {
+    font-family: 'TT Lakes';
+    font-weight: normal;
+    color:$linkColor;
+    &__text {
+        // margin-left: 32px;
+    }
+    margin-top: 0px;
+    &__title, &__second-paragraph  {
+        display: none;
+    }
+    &__first-paragraph {
+        font-size: 15px;
+        margin: 0 16px 0 16px;
+        line-height: 18px;
+    }
+    &__read-more-button {
+        color:$linkColor;
+        font-family: 'TT Lakes';
+        font-weight: 600;
+        margin:16px 0;
+        margin-left: 40px;
+    }
+    &__image {
+        width: 320px;
+        height: 176px;
+        margin-right: 25px;
+        border-radius: none;
+        margin-bottom: 24px;
+    }
+    &__hidden-paragraph {
+        display: none;
+        &--active {
+            display: inline;
+            font-size: 15px;
+            margin: 0px 0px 0px 0px;
+            line-height: 18px;
+        }
+    }
+    &__hidden-paragraph2 {
+        margin-top: 25px;
+        display: inline-block;
+    }
+    &__second-paragraph {
+        &--active {
+            white-space: wrap;
+            display: inline-block;
+            font-size: 15px;
+            margin: 16px 16px 0 16px;
+            line-height: 18px;
+        }
+    }
+}
+.about-company {
+   &__read-more-button {
+    &--rotate::before {
+        transform: rotate(180deg);
+    }
+   }
+}
+@media (min-width:321px) and (max-width:766px) {
+    .about-company {
+        &__image {
+            display: block;
+            margin: 0 auto;
+            height: 100%;
+            width: 100%;
+            max-width: 500px;
+            margin: 16px auto 0;
+        }
+    }
+}
+@media (min-width:768px) {
+    // .main {
+
+    //     &__nav {
+    //         padding-left: 24px;
+    //         margin-left: 0;
+    //     }
+    // }
+.about-company {
+    display: flex;
+    &__first-paragraph {
+        margin-left: 0px;
+    }
+    &__second-paragraph {
+        display: block;
+        font-size: 15px;
+        margin: 0 16px 0 16px;
+        line-height: 18px;
+        margin-left: 0px;
+    }
+    &__hidden-paragraph {
+        display: none;
+        &--active {
+            display: inline;
+        }
+    }
+    &__hidden-paragraph2 {
+        display: none;
+        &--active {
+            display: inline-block;
+        }
+    }
+    &__text {
+        margin-right: 23px;
+        margin-left: 34px;
+    }
+    &__image {
+        width: 360px;
+        height: 208px;
+        margin-right: 25px;
+        border-radius: 7px;
+        /* transform: translateY(-30px); */
+    }
+    &__second-paragraph {
+        margin-top: 25px;
+    }
+   
+}
+}
+@media (min-width:768px) {
+    .about-company {
+        &__text {
+            margin-left: 24px;
+        }
+    }
+}
+@media (min-width:1120px) {
+    .about-company{
+        &__hidden-paragraph {
+            display: inline;
+            font-size: 15px;
+            line-height: 20px;
+        }
+        &__hidden-paragraph2 {
+            margin-top: 25px;
+            display: none;
+            font-size: 15px;
+            line-height: 20px;  
+            &--active{
+                display: inline-block;
+            }
+        }
+        &__text {
+            font-size: 15px;
+            margin-right: 36px;
+            line-height: 20px;
+        }
+        &__first-paragraph {
+            line-height: 20px;
+            margin-right: 0px;
+        }
+        &__second-paragraph {
+            margin-right: 0px;
+        }
+        &__image {
+            transform: translateY(-10px);
+            width: 531px;
+            height: 307px;
+            margin-right: 28px;
+        }
+    }
+}
+@media (min-width:1120px) {
+    .about-company {
+        &__text {
+            margin-left: 32px;
+        }
+    }
+}
+
+
+

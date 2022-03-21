@@ -1,0 +1,111 @@
+.button {
+    font-family: 'TT lakes';
+    font-weight: 500;
+    color: $linkColor;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    transition: 0.3s all;
+    background: no-repeat;
+   
+    &:hover {
+            transform: scale(1.05);
+    }
+    &--active {
+        &:hover {
+            transform: scale(1);
+        }
+    }
+    &__back {
+        background: url('../img/button/burger.svg');
+    }
+    &__search {
+        background: url('../img/button/search.svg');
+    }
+    &__call {
+        background: url('../img/button/callcall.svg');
+    }
+    &__chat {
+        background: url('../img/button/chat.svg');
+        width: 40px;
+        height: 40px;
+    }
+    &__profile{
+        background: url('../img/button/profile.svg');
+        width: 40px;
+        height: 40px;
+    }
+    &__send {
+        background: url('../img/button/button-send.svg');
+        width: 136px;
+        height: 32px;
+    }
+    &__checkstatus {
+        background: url('../img/header/checkstatus.svg');
+
+    }
+    &__repair {
+        background: url('../img/header/repair.svg');
+    }
+    &__burger {
+        background: url('../img/header/burgermenu.svg');
+    }
+    &__order {
+        background: url('../img/button/order.svg') no-repeat;
+        width: 136px;
+        height: 32px;
+    }
+}
+.read-more-button {
+    position: relative;
+    background: none;
+    border: none;
+    font-size: 16px;
+
+    &--active {
+        transform: rotate(180deg);
+    }
+    &::before {
+        content: '';
+        background-image: url('../img/about-company/read-more.svg');
+        position: absolute;
+        width: 8px;
+        height: 11px;
+        left:-17px;
+        top:5px;
+    }
+}
+    .show-all {
+        font-family: 'TT Lakes';
+        font-weight: 500;
+        position: relative;
+        background: none;
+        border: none;
+        font-size: 16px;
+        // font-family: 'TT Lakes';
+        // font-weight: 500;
+        &:hover {
+            text-decoration: underline;
+        }
+        &::before {
+            content: '';
+            background-image: url('../img/about-company/read-more.svg');
+            position: absolute;
+            width: 8px;
+            height: 11px;
+            left:-17px;
+            top:5px;
+        }
+        &--active {
+            &::before {
+                transform: rotate(180deg);
+            }
+        }
+    }
+.read-more-button {
+    &:hover {
+        text-decoration: underline;
+    }
+}

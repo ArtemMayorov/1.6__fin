@@ -1,0 +1,135 @@
+.main {
+    font-family: 'TT Lakes';
+    font-weight: 500;
+    &__nav {
+        position: relative;
+        margin-left: 16px;
+    }
+    &__button-label {
+        display: none;
+    }
+}
+.nav {
+    &__list {
+        overflow: scroll;
+        display: flex;
+        align-items: baseline;
+        margin-top: 24px;
+        padding-bottom: 24px;
+        &::-webkit-scrollbar {
+             width: 0; 
+            }
+    }   &::after {
+        content: '';
+        width: 24px;
+        height: 50px;
+        right: 0px;
+        top: 0;
+        position: absolute;
+        background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+        filter:blur(4px)
+       
+    }
+    &__item {
+        list-style-type: none;
+        &--active {
+            padding: 6px 9px 6px 14px;
+            background: #FFFFFF;
+            border: 2px solid #B8FFEC;
+            border-radius: 6px;
+            margin-right: 19px;
+            .nav {
+                &__link {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    &__link {
+        text-decoration: none;
+        color:#7E7E82;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        white-space: nowrap;
+        margin-right: 25px;
+    }
+}
+@media screen and (min-width:1120px) {
+    .nav {
+        &__list {
+            &::after {
+                display: none;
+            }
+        }
+    }
+}
+@media (min-width:768px) {
+    .main {
+        &__nav {
+            margin-left: 24px;
+        }
+    }
+}
+@media screen and (min-width:1440px) {
+    &__button-group {
+        display: flex;
+        align-items: flex-start;
+    }
+    &__button-label {
+        display: block;
+        display: flex;
+        align-items: center;
+        margin-left: 9px;
+    }
+
+}
+@media (min-width:1120px) {
+    .main {
+        &__header {
+            display: block;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 42px 32px 0px 0;
+        }
+ 
+        &__nav {
+            margin-left: 0;
+            padding-left: 32px;
+        }
+       
+    }
+        .button {
+            &__repair {
+                margin-left: 9px;
+                margin-right: 32px;
+            }
+            &__checkstatus {
+                margin-left: 9px;
+            }
+        }
+        .nav {
+            &__list {
+                flex-wrap: wrap;
+                margin: 8px 32px 0px 0px;
+                padding: 0px;
+                // padding-left: 32px;
+                padding-bottom: 0px;
+                overflow: hidden;
+            }
+            &__item {
+                margin-bottom: 13px;
+                margin-bottom: 22px;
+                &--active {
+                    margin-right: 0;
+                    padding-left: 0;
+                    padding-right: 20px;
+                    margin-bottom: 15px;
+                }
+            }
+            &__link {
+                margin-right: 15px;
+                margin-left:20px ;
+            }
+        }
+    }

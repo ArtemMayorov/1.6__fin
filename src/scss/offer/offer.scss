@@ -1,0 +1,47 @@
+.offer {
+    font-family: "TT Lakes";
+    padding: 16px 16px 0 16px;
+    
+    &__paragraph {
+        color: $linkColor;
+        font-size: 14px;
+        line-height: 20px;
+        padding-right: 10px;
+        margin-bottom: 16px;
+    }
+    &__link{
+        position: relative;
+        font-weight: 600;
+        letter-spacing: -0.2px;
+        color: $linkColor;
+        text-decoration: none;
+        &:hover{
+            text-decoration:underline;
+        }
+        &::after{
+            position: absolute;
+            content: " ";
+            background: url('../img/offer/offer.svg') no-repeat;
+            width: 11px;
+            height: 20px;
+            bottom: -4px;
+            right: -20px;
+        }
+    }
+}
+@media (min-width:768px) {
+    .offer{
+    padding: 24px 16px 0 24px;
+    &__paragraph {
+        width: 421px;
+    }
+    }
+}
+@media (min-width:1120px) {
+    .offer{
+    padding: 0px 16px 0 32px;
+    &__paragraph {
+        width: 421px;
+    }
+    }
+}
