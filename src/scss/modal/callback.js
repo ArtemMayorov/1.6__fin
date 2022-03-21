@@ -27,6 +27,8 @@ modalBack.addEventListener('click', () =>{
 })
 openCallBack.addEventListener('click', (ev) => {
     if (ev.target === openCallBack) {
-        openCallBack.classList.toggle('callback-page--active')
+        openCallBack.classList.toggle('callback-page--active');
+        openMenu.classList.remove('aside-page--active');
+        bodyDisable.classList.remove('body--disabled');
     }
 })

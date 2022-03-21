@@ -62,6 +62,7 @@ const feedbackButtonBack = document.querySelector('.feedback-modal__back')
     openMenu.addEventListener('click', (ev) => {
         if (ev.target === openMenu) {
             openMenu.classList.toggle('aside-page--active')
+            bodyDisable.classList.remove('body--disabled')
         }
     })
 // if (window.innerWidth > 360) {

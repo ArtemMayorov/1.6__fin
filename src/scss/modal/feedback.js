@@ -29,6 +29,8 @@ feedbackButtonBack.addEventListener('click', () =>{
 })
 openFeedback.addEventListener('click', (ev) => {
     if (ev.target === openFeedback) {
-        openFeedback.classList.toggle('feedback-page--active')
+        openFeedback.classList.toggle('feedback-page--active');
+        mainPage.classList.remove('body--disabled');
+        bodyDisable.classList.remove('body--disabled');
     }
 })
