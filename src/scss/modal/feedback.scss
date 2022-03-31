@@ -2,16 +2,13 @@
     position: fixed;
     background-color: rgba(250, 250, 250, 0.8);
     opacity: 1;
-    // display: none;
-    // left: auto;
-    // z-index: -100;
+    
     height: 100%;
     width: 100%;
     transition-duration: 0.7s;
     transform: translateX(100%);
     position: fixed;
     left: 0;
-    // right: 0;
     top: 0;
     &--active{
         transition-duration: 0.7s;
@@ -19,26 +16,16 @@
         background-color: rgba(250, 250, 250, 0.8);
         z-index: 100000;
         transform: translateX(0);
-        // transition: 0.7s;
         opacity: 1;
-        // display: block;
        
         overflow-y: scroll;
-      
-        // min-height: 676px;
-        // top: 0;
-        
-        // left:-320px;
-        // z-index: 2005;
         
     }
    
 }
 
 .feedback-modal {
-    // overflow: scroll;
-    // height: 1000px;
-    // margin-left: 100%;
+
     min-height: 650px;
     height: 100%;
 
@@ -75,15 +62,13 @@
 }
 @media screen and  (min-width:768px) {
     .body--disabled {
-        // height: 100px;
+        
     }
     .feedback-page {
         background-color: rgba(250, 250, 250, 0.8);
-        // width: 1440px;
-        // height: 940px;
+     
         &--active {
-            // left: -670px;
-            // min-height: 600px;
+    
         }
     }
     .feedback-modal {
@@ -118,25 +103,17 @@
     }
 }
 @media screen and (min-width:1440px) {
-    .button {
-        &__back {
-            // display: block;
-        }
-    }
+  
     .feedback-page {
-        // position: static;
-        // left: 0;
+       
         width: 100%;
-        // opacity: 0;
+       
         background: rgba(250, 250, 250, 0.8);
        
-        // background: rgba(250, 250, 250, 0.8);
-        // width: 1440px;
-        // height: 940px;
+    
         &--active {
             opacity: 1;
-            // left: -439px;
-            // min-height: 600px;
+         
         }
     }
     .feedback-modal {
@@ -174,38 +151,4 @@
         } 
     }
 }
-// @media (min-width:1440px) {
-//     .callback-page {
-//         background-color: $backgroundWhite;
-//         width: 1440px;
-//         height: 940px;
-//     }
-//     .callback-modal {
-//         padding: 1px 30px 675px 30px;
-//         border-left:1px solid #D9FFF5;
-//         box-shadow: -3px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
-//         // width: 439px;
-//         position: relative;
-//         &__back {
-//             position: absolute;
-//             top:33px;
-//             left: -64px;
-//         }
-//         &__title {
-//             margin-top: 39px;
-//             &::before {
-//                 content: '';
-//                    position: absolute;
-//                    border: 2px solid #41F6D7;
-//                    background-color:#41F6D7 ;
-//                    border-radius:0 100px 100px 0;
-//                    height: 40px;
-//                    left:-30px;
-//                 }
-//         }
-//         &__send {
-//             margin-left: 238px;
-//             margin-top: 23px;
-//         }
-//     }
-// }
+ 

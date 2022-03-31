@@ -3,7 +3,7 @@
     font-weight: normal;
     color:$linkColor;
     &__text {
-        // margin-left: 32px;
+       
     }
     margin-top: 0px;
     &__title, &__second-paragraph  {
@@ -71,13 +71,7 @@
     }
 }
 @media (min-width:768px) {
-    // .main {
-
-    //     &__nav {
-    //         padding-left: 24px;
-    //         margin-left: 0;
-    //     }
-    // }
+ 
 .about-company {
     display: flex;
     &__first-paragraph {

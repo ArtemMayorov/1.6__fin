@@ -67,35 +67,19 @@ $servisesTitleColor:#7E7E82;
     font-weight: 600;
     font-style: normal;
 }
-// @font-face {
-//   font-family:'TT-lakes';
-//   src: url('../fonts/TTLakes/TTLakes-Regular.ttf') format('truetype');
-//   font-weight: normal;
-//   font-style: normal;
-// }
+
 
 body {
   font-family: 'TT-lakes', sans-serif;
   background-color: $bgColor;
   justify-content: center;
-  // position: fixed;
-  // color: $text;
+
 }
 .body--disabled {
-  // position: fixed;
+  
   height: 100%;
   overflow: hidden;
-  // min-height: 800px;
-}
-@media screen and (min-width:768px) {
-  .body--disabled {
-  // height:671px;
-  }
-}
-@media screen and (min-width:1440px) {
-  .body--disabled {
-  // height: 940px;
-  }
+
 }
 
 
