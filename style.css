@@ -128,7 +128,7 @@
             filter: drop-shadow(1px 0px 0px #252525); }
 
 .burger-footer {
-  margin-top: 100%; }
+  margin-top: auto; }
   .burger-footer__item {
     list-style: none;
     text-decoration: none;
@@ -1261,7 +1261,7 @@
       height: auto; }
   .swiper__partner.swiper {
     overflow: hidden;
-    min-height: 175px;
+    min-height: 160px;
     margin-top: 16px;
     margin-left: 0; } }
 
