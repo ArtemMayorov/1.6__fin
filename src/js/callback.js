@@ -7,7 +7,6 @@ const bodyDisable = document.querySelector('.body')
 const openCallBack = document.querySelector('.callback-page')
 
 
-// console.log(orderCall)
  
 orderCall.addEventListener('click', () =>{
     console.log(orderCall)

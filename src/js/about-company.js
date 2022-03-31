@@ -5,7 +5,6 @@ const hiddenParOpen = document.querySelector ('.about-company__hidden-paragraph'
 const hiddenPar2Open = document.querySelector ('.about-company__hidden-paragraph2')
 
 
-console.log(openSecondPar)
 
 readMore.addEventListener('click',() =>{
 
@@ -14,20 +13,10 @@ readMore.addEventListener('click',() =>{
     hiddenParOpen.classList.toggle('about-company__hidden-paragraph--active')
     hiddenPar2Open.classList.toggle('about-company__hidden-paragraph2--active')
 
-    // about-company__hidden-paragraph--active
     if(readMore.textContent != "Скрыть") {
         readMore.textContent = "Скрыть"
     }else {
-        readMore.textContent = "Показать всё"
+        readMore.textContent = "Читать далее"
 
     }
 })
-//   showAllButton.classList.toggle('slider__show-all--hidden');
-
-//    if(showAllButton.textContent != "Скрыть") {
-//   showAllButton.textContent = "Скрыть"
-//   } else {
-//     showAllButton.textContent = "Показать все"
-//   }
-
-// })

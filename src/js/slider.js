@@ -1,6 +1,4 @@
 import Swiper, { Pagination } from 'swiper'
-// import 'swiper/swiper.scss'
-// import 'swiper/components/pagination/pagination.scss' 
 Swiper.use([Pagination])
 let swiper1
 let swiper2
@@ -11,12 +9,10 @@ function statusSwiper() {
     if (window.innerWidth < 768 && swiperStatus.dataset.mobile == "false") {
         swiperStatus.dataset.mobile = "true"
         swiper1 = new Swiper(getClass[0], {
-            // Optional parameters
             direction: 'horizontal',
             slidesPerView: 'auto',
             spaceBetween: 16,
             loop: false,
-            // If we need pagination
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
@@ -33,12 +29,10 @@ function statusSwiper() {
     if (window.innerWidth < 768 && swiperStatus.dataset.mobile == "false") {
         swiperStatus.dataset.mobile = "true"
         swiper2 = new Swiper(getClass[1], {
-            // Optional parameters
             direction: 'horizontal',
             slidesPerView: 'auto',
             spaceBetween: 16,
             loop: false,
-            // If we need pagination
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
@@ -55,12 +49,10 @@ function statusSwiper() {
     if (window.innerWidth < 768 && swiperStatus.dataset.mobile == "false") {
         swiperStatus.dataset.mobile = "true"
         swiper3 = new Swiper(getClass[2], {
-            // Optional parameters
             direction: 'horizontal',
             spaceBetween: 16,
             slidesPerView: 'auto',
             loop: true,
-            // If we need pagination
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
